@@ -1,0 +1,15 @@
+import random
+
+x = random.randrange(1,101)
+
+while True:
+    
+    print('숫자를 맞춰보세요(1-100)')
+    y = int(input())
+    if y > x:
+        print('숫자가 너무 큽니다.')
+    elif y < x:
+        print('숫자가 너무 작습니다')
+    else:
+        print('정답입니다. 입력한 숫자는 {0}입니다'.format(y))
+        break
